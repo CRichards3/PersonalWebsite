@@ -1,0 +1,104 @@
+body {
+  width: 100%;
+  font-family: "monospace", serif;
+}
+
+ul {
+  text-align: center;
+  list-style-position: inside;
+}
+
+ol {
+  text-align: center;
+  list-style-position: inside;
+  display: flex;
+}
+
+li {
+  background-color: beige;
+}
+
+h2 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+h1 {
+  font-weight: bold;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+td {
+  padding: 1%;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: beige;
+}
+
+#school {
+  font-weight: bold;
+}
+
+#headerdiv {
+  display: block;
+  align-content: center;
+  text-align: center;
+  background-color: lightblue;
+}
+
+#links {
+  text-align: center;
+}
+
+#obj {
+  background-color: beige;
+}
+
+/* Accordion styles */
+#accordion input {
+  display: none;
+}
+#accordion label {
+  background: #eee;
+  border-radius: 0.25em;
+  cursor: pointer;
+  display: block;
+  margin-bottom: 0.125em;
+  padding: 0.25em 1em;
+  z-index: 20;
+}
+#accordion label:hover {
+  background: #ccc;
+}
+
+#accordion input:checked + label {
+  background: #ccc;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  color: white;
+  margin-bottom: 0;
+}
+#accordion article {
+  background: #f7f7f7;
+  height: 0px;
+  overflow: hidden;
+  z-index: 10;
+}
+#accordion article p {
+  padding: 1em;
+}
+#accordion input:checked article {
+}
+#accordion input:checked ~ article {
+  border-bottom-left-radius: 0.25em;
+  border-bottom-right-radius: 0.25em;
+  height: auto;
+  margin-bottom: 0.125em;
+}
