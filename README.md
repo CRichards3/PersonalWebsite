@@ -1,3 +1,3 @@
 # My Personal Website
 
-## index outside
+## To be hosted on heroku!
